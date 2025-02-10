@@ -50,7 +50,7 @@ const Weather = () => {
 
     setLoading(true);
     try {
-      const res = await axios.get(`https://weather-app-backend-k8jw.onrender.com/weather/${city}`);
+      const res = await axios.get(`https://weather-app-backend-szc6.onrender.com/weather/${city}`);
       setWeather(res.data);
       fetchHistory();
     } catch (error) {
@@ -61,7 +61,7 @@ const Weather = () => {
   };
 
   const fetchHistory = async () => {
-    const res = await axios.get("https://weather-app-backend-k8jw.onrender.com/history");
+    const res = await axios.get("https://weather-app-backend-szc6.onrender.com/history");
     setHistory(res.data);
   };
 
